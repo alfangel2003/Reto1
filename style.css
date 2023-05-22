@@ -1,0 +1,10 @@
+#botonCopiar{
+    display: none;
+}
+
+#lateral{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    margin-right: 15%;
+}

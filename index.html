@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="js/bootstrap.bundle.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <script type="text/javascript" src="script.js"></script>
+        <title>Reto Alura</title>
+    </head>
+    <body class="bg-primary p-5">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div>
+                            <label for="textoCifrado">Texto a codificar</label>
+                            <input type="text" id="textoCifrado" class="form-control">
+                            </div>
+                            <div>
+                            <label for="textoDescifrado">Resultado</label>
+                            <textarea name="resultado" id="textoDescifrado" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="co-lg-4">
+                                    <button type="button" id="botonEncriptado" class="btn btn-primary">Encriptar</button>
+                                    <button type="button" id="botonDesencriptado" class="btn btn-primary">Desencriptar</button>
+                                    <button type="button" id="botonCopiar" class="btn btn-info">Copiar</button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>           
+        </div>
+        
+    </body>
+    <footer>
+        <p>Dev Alfredo Angel Barajas Ramirez. Mayo 2023</p>
+    </footer>
+    <script>
+        var btn=document.querySelector("#botonEncriptado");
+        btn.onclick = encriptar;
+        var btn2=document.querySelector("#botonDesencriptado");
+        btn2.onclick= desencriptar;
+        var btn3=document.querySelector("#botonCopiar");
+        btn3.onclick=copiar;
+    </script>
+</html>
